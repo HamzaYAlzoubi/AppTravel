@@ -6,8 +6,6 @@ import { FiMenu } from 'react-icons/fi';
 import LogoutButton from '../auth/LogoutButton';
 import { RiHomeLine, RiMapPinLine, RiUserLine } from "react-icons/ri";
 import { usePathname } from 'next/navigation';
-import { TbLogout2 } from "react-icons/tb";
-
 
 type SidebarProps = {
     name?: string;
