@@ -1,6 +1,7 @@
-import { ChartBarMultiple } from "@/components/admin/dashboard/Charts";
+import { Charts } from "@/components/admin/dashboard/Charts/Charts";
 import DataCard from "@/components/admin/dashboard/dataCard";
 import HeaderDashboard from "@/components/admin/dashboard/Header";
+import { Tables } from "@/components/admin/dashboard/Tables/table";
 
 
 export default function Dashboard() {
@@ -22,60 +23,15 @@ export default function Dashboard() {
 
   return (
     <div className="p-4 grid gap-6">
+
       <HeaderDashboard />
 
       <DataCard cardData={cardData} />
 
-      <ChartBarMultiple/>
+      <Charts/>
 
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
-      <h1 className="text-4xl">dashboard</h1>
+      <Tables/>
+      
     </div>
   );
 }

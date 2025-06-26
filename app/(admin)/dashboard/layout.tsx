@@ -20,7 +20,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         email={session.user?.email ?? undefined}
         img={session.user?.image ?? undefined}
       />
-      <main className="flex-1 p-6 md:ml-60">
+      <main className="flex-1 p-6 md:ml-65">
         {children}
       </main>
     </div>

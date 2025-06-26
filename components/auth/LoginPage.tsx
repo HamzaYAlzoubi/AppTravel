@@ -1,17 +1,17 @@
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
-import { authOptions } from "@/lib/auth/auth-options";
-import Image from "next/image";
-import { LoginTemplate } from "./LoginTemplate";
+import { getServerSession } from "next-auth"
+import { redirect } from "next/navigation"
+import { authOptions } from "@/lib/auth/auth-options"
+import Image from "next/image"
+import { LoginTemplate } from "./LoginTemplate"
 
 type Props = {
-  type: "admin" | "client";
-};
+  type: "admin" | "client"
+}
 export default async function LoginPage({ type }: Props) {
-  const session = await getServerSession(authOptions);
+  const session = await getServerSession(authOptions)
 
   if (session) {
-    redirect(type === "admin" ? "/dashboard" : "/home");
+    redirect(type === "admin" ? "/dashboard" : "/home")
   }
 
   const content = {
@@ -27,7 +27,7 @@ export default async function LoginPage({ type }: Props) {
         "Sign in with Google to explore AI-generated itineraries, trending destinations, and much more",
       buttonUrl: "/home",
     },
-  }[type];
+  }[type]
 
   return (
     <>
