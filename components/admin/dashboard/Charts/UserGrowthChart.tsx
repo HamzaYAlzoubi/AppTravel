@@ -37,16 +37,18 @@ for (let i = 0; i <= maxY; i += step) {
 
 export function UserGrowthChart() {
   return (
-    <Card className="lg:w-[50%]">
-      <CardHeader>
-        <CardTitle className="text-[20px]">User Growth</CardTitle>
-        <hr className="mt-4 mb-4" />
-      </CardHeader>
+    <Card className="lg:w-[50%] lg:h-[85%] h-[40%]">
+	<CardHeader>
+		<CardTitle className="text-[20px]">User Growth</CardTitle>
+ 		 <hr className="mt-4 mb-4" />
+	</CardHeader>
+
       <CardContent>
         <ChartContainer config={chartConfig}>
           <ComposedChart
             data={chartData}
-            margin={{ left: 12, right: 12 }}
+            margin={{ top: 0, right: 0, left: -30, bottom: 65 }}
+
           >
             <CartesianGrid vertical={false} />
 

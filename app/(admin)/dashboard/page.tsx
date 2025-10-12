@@ -1,3 +1,4 @@
+import { Cards } from "@/components/admin/dashboard/Cards";
 import { Charts } from "@/components/admin/dashboard/Charts/Charts";
 import DataCard from "@/components/admin/dashboard/dataCard";
 import HeaderDashboard from "@/components/admin/dashboard/Header";
@@ -27,6 +28,8 @@ export default function Dashboard() {
       <HeaderDashboard />
 
       <DataCard cardData={cardData} />
+
+      <Cards/>
 
       <Charts/>
 
