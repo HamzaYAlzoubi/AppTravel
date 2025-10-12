@@ -32,7 +32,7 @@ export default function TripTrendsChart() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   return (
-    <Card className="lg:w-[50%] lg:h-[85%] h-[40%]">
+    <Card className="lg:w-[50%] lg:h-[85%] h-[40%] ">
 	<CardHeader>
 		<CardTitle className="text-[20px]">Trip Trends</CardTitle>
  		 <hr className="mt-4 mb-4" />
@@ -43,7 +43,7 @@ export default function TripTrendsChart() {
           <BarChart
             accessibilityLayer
             data={chartData}
-            margin={{ top: 0, right: 0, left: -30, bottom: 65 }}
+            margin={{ top: 0, right: 0, left: -20, bottom: 65 }}
           >
             <CartesianGrid vertical={false} />
 
