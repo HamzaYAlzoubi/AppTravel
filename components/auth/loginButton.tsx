@@ -6,14 +6,16 @@ import { signIn } from "next-auth/react";
 
 type LoginButtonProps = {
   url: string;
+  type: "admin" | "client";
 };
 
-export default function LoginButton({ url }: LoginButtonProps) {
+export default function LoginButton({ url, type }: LoginButtonProps) {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleLogin = async () => {
     setIsLoading(true);
-    await signIn("google", { callbackUrl: url });
+    const provider = type === "admin" ? "google-admin" : "google-client";
+    await signIn(provider, { callbackUrl: url });
   };
 
   return (

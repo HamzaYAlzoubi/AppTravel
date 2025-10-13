@@ -39,12 +39,12 @@ export default async function LoginPage({ type }: Props) {
         height={1000}
       />
       <div className="relative flex items-center justify-center h-screen z-10">
-        <LoginTemplate
-          title={content.title}
-          description={content.description}
-          buttonUrl={content.buttonUrl}
-        />
-      </div>
+              <LoginTemplate
+                title={content.title}
+                description={content.description}
+                buttonUrl={content.buttonUrl}
+                type={type}
+              />      </div>
     </>
   )
 }

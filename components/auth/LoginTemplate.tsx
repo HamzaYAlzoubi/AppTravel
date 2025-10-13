@@ -13,12 +13,14 @@ type LoginTemplateProps = {
   title: string
   description: string
   buttonUrl: string
+  type: "admin" | "client"
 }
 
 export function LoginTemplate({
   title,
   description,
   buttonUrl,
+  type,
 }: LoginTemplateProps) {
   return (
     <Card className="w-100">
@@ -37,7 +39,7 @@ export function LoginTemplate({
       </CardHeader>
 
       <CardContent>
-        <LoginButton url={buttonUrl} />
+        <LoginButton url={buttonUrl} type={type} />
       </CardContent>
     </Card>
   )
